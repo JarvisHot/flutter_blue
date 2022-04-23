@@ -26,7 +26,7 @@ class BluetoothCharacteristic {
         _value.stream,
         _onValueChangedStream,
       ]);
-
+  Stream <List<int>> get didUploadValue => _onValueChangedStream;
   List<int> get lastValue => _value.value ?? [];
 
   BluetoothCharacteristic.fromProto(protos.BluetoothCharacteristic p)
