@@ -3,7 +3,7 @@
 
 <br>
 <p align="center">
-<img alt="FlutterBlue" src="https://github.com/pauldemarco/flutter_blue/blob/master/site/flutterblue.png?raw=true" />
+<img alt="FlutterBlue" src="https://github.com/JarvisHot/flutter_blue/blob/master/site/flutterblue.png?raw=true" />
 </p>
 <br><br>
 
@@ -98,6 +98,9 @@ await d.write([0x12, 0x34])
 await characteristic.setNotifyValue(true);
 characteristic.value.listen((value) {
     // do something with new value
+});
+characteristic.didUploadValue.listen(value) {
+    // do something when didUpdateValueForCharacteristic called in iOS
 });
 ```
 

@@ -1,3 +1,5 @@
+## 0.8.1
+* fix iOS value duplicate
 ## 0.8.0
 * Migrate the plugin to null safety.
 
